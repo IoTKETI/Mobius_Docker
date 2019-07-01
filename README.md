@@ -38,7 +38,7 @@
 "sudo docker-compose down" 필수 
 
 
-![정상동작 화면](./img/성공화면.png)
+![정상동작 화면](./img/성공화면.PNG)
 
 
 # docker-compose 구성 내용 
