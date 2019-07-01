@@ -2,24 +2,38 @@
 
 1. 도커 설치
 
-sudo apt-get install docker.io
+    sudo apt-get install docker.io
 
 2. 도커 컴포즈 설치
 
-sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+    sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 
 3. 권한 변경 
-sudo chmod +x /usr/local/bin/docker-compose
+    
+    sudo chmod +x /usr/local/bin/docker-compose
+
+4. 모비우스 도커 컴포즈 yml 파일 다운로드 
+
+    git clone https://github.com/IoTKETI/Mobius.git
+    cd Mobius_Docker
 
 4. 모비우스 다운로드 
 
-git clone https://github.com/IoTKETI/Mobius.git
+    git clone https://github.com/IoTKETI/Mobius.git
+    cd Mobius
 
-3. 모비우스 & npm install
+5. 모비우스 node 모듈 설치
+    
+    npm install
+    cd ..
 
-4. 모비우스 db 패스워드
+6. 도커 컴포즈 실행 
 
-4. 환경설정 
+    sudo docker-compose up
+    
+
+
+# docker-compose 구성 내용 
 
     
 version: '2.1'  # Docker-compose 버전 입니다. 명령어 들이 상이합니다. 
