@@ -34,7 +34,7 @@
 
     sudo docker-compose up
     
-*** Docker-compose If forcibly terminated, enter the "sudo docker-compose down" command mandatory input**
+* Docker-compose If forcibly terminated, enter the "sudo docker-compose down" command mandatory input
 
 
 # Snapshot of normal running screen 
