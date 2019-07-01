@@ -10,6 +10,8 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-c
 
 sudo chmod +x /usr/local/bin/docker-compose
 
+git clone https://github.com/IoTKETI/Mobius.git
+
 3. 모비우스 & npm install
 
 4. 모비우스 db 패스워드
