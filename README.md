@@ -88,6 +88,6 @@
 
 ## Authors
 
-* **JongGwan An** - *Update work* - [Cftn] (https://github.com/Cftn) (kman3212@gmail.co.kr, kman3212@keti.re.kr)
+* **JongGwan An** - *Initial work* - [Cftn] (https://github.com/Cftn) (kman3212@gmail.co.kr, kman3212@keti.re.kr)
 
 
