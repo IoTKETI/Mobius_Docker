@@ -15,16 +15,19 @@
 4. 모비우스 도커 컴포즈 yml 파일 다운로드 
 
     git clone https://github.com/IoTKETI/Mobius_Docker.git
+    
     cd Mobius_Docker
 
 4. 모비우스 다운로드 
 
     git clone https://github.com/IoTKETI/Mobius.git
+    
     cd Mobius
 
 5. 모비우스 node 모듈 설치
     
     npm install
+    
     cd ..
 
 6. 도커 컴포즈 실행 
