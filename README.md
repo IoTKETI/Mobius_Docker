@@ -38,13 +38,10 @@
 
 # docker-compose 구성 내용 
 
-    
-version: '2.1'  # Docker-compose 버전 입니다. 명령어 들이 상이합니다. 
-
-services:  # 각 가상화 소프트웨어들을 서비스로 정의합니다. 
 
 
- db:
+
+ DB
  
     image: mysql:5.7    # Docker-Hub에 저장된 mysql Docker 이미지를 가져옵니다. 
     environment:        # mysql 환경변수 설정입니다. 
@@ -60,7 +57,7 @@ services:  # 각 가상화 소프트웨어들을 서비스로 정의합니다.
             timeout: 20s
             retries: 10
             
- node:			
+ Mobius			
  
     image: "node:7.6"
     working_dir: /home/node/app   # Nodejs 소스코드를 형성할 가상이미지 디렉토리를 설정합니다. 
@@ -75,7 +72,7 @@ services:  # 각 가상화 소프트웨어들을 서비스로 정의합니다.
     depends_on:             # Mysql이 동작 한 이후 Mobius가 동작하게 됩니다. 이를 고려하지 않을 시 DB와의 딜레이로 정상적으로 실행되지 않습니다.   
             db:
                 condition: service_healthy
- mqtt:
+ MQTT
  
     image: eclipse-mosquitto:latest  # Docker-Hub에 저장된 mosquitto 이미지를 가져옵니다. 
     ports:
