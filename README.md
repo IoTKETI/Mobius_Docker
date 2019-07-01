@@ -1,40 +1,40 @@
 # Mobius_Docker Installation
 
-1. Download docker
+**1. Download docker**
 
     sudo apt-get install docker.io
 
-2. Download docker-compose
+**2. Download docker-compose**
 
     sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 
-3. Change the permission to use docker-compose
+**3. Change the permission to use docker-compose**
     
     sudo chmod +x /usr/local/bin/docker-compose
 
-4. Download the docker-compose "yml" file of Mobius
+**4. Download the docker-compose "yml" file of Mobius**
 
     git clone https://github.com/IoTKETI/Mobius_Docker.git
     
     cd Mobius_Docker
 
-4. Download the latest Mobius source code
+**4. Download the latest Mobius source code**
 
     git clone https://github.com/IoTKETI/Mobius.git
     
     cd Mobius
 
-5. Download the essential libraries required to run Mobius
+**5. Download the essential libraries required to run Mobius**
     
     npm install
     
     cd ..
 
-6. Run docker-compose 
+**6. Run docker-compose**
 
     sudo docker-compose up
     
-* Docker-compose If forcibly terminated, enter the "sudo docker-compose down" command mandatory input
+*** Docker-compose If forcibly terminated, enter the "sudo docker-compose down" command mandatory input**
 
 
 # Snapshot of normal running screen 
