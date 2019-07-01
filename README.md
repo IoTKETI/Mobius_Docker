@@ -1,14 +1,17 @@
 # Mobius_Docker
 
+1. 도커 설치
 
+sudo apt-get install docker.io
 
-1. 도커
-
-2. 도커 컴포즈 
+2. 도커 컴포즈 설치
 
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 
+3. 권한 변경 
 sudo chmod +x /usr/local/bin/docker-compose
+
+4. 모비우스 다운로드 
 
 git clone https://github.com/IoTKETI/Mobius.git
 
