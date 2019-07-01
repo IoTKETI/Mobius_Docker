@@ -86,18 +86,8 @@
                 condition: service_healthy
 
 
+## Authors
+
+* **JongGwan An** - *Update work* - [Cftn] (https://github.com/Cftn) (kman3212@gmail.co.kr, kman3212@keti.re.kr)
 
 
-
-docker-compose version 1.21.2, build a133471
-
-Docker version 1.13.1, build 092cba3
-
-
-Ubuntu 16.0.4 LTS  64bit
-
-Mysql 5.7
-
-Nodejs 7.6
-
-Mosquitto 1.4.12
