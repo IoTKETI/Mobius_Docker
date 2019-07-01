@@ -60,7 +60,7 @@ services:  # 각 가상화 소프트웨어들을 서비스로 정의합니다.
             timeout: 20s
             retries: 10
             
- node:			# Docker-Hub에 저장된 Nodejs 이미지를 가져옵니다. 
+ node:			
  
     image: "node:7.6"
     working_dir: /home/node/app   # Nodejs 소스코드를 형성할 가상이미지 디렉토리를 설정합니다. 
