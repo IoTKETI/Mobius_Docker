@@ -34,7 +34,8 @@
 
     sudo docker-compose up
     
-
+* 도커 컴포즈 강제 종료 시 (Ctrl + C - 2번)
+"sudo docker-compose down" 필수 
 
 # docker-compose 구성 내용 
 
