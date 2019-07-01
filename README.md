@@ -37,7 +37,7 @@
 * Docker-compose If forcibly terminated, enter the "sudo docker-compose down" command mandatory input
 
 
-# Snapshot of normal running screen 
+# Snapshot of normal running Mobius docker 
 ![정상동작 화면](./img/성공화면.PNG)
 
 
