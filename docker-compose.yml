@@ -6,13 +6,13 @@ services:
  db:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: dksdlfduq2
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     ports:
       - "3306:3306"
     network_mode: "host"
     volumes:
-      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      - ./Mobius/sql:/docker-entrypoint-initdb.d
     healthcheck:
             test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
             timeout: 20s
@@ -23,7 +23,7 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - ./Mobius-master:/home/node/app
+      - ./Mobius:/home/node/app
     network_mode: "host"
     expose:
       - "8081"
