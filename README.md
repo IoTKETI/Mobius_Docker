@@ -51,13 +51,14 @@
  
     image: mysql:5.7    # Docker-Hub에 저장된 mysql Docker 이미지를 가져옵니다. 
     environment:        # mysql 환경변수 설정입니다. 
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: dksdlfduq2
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: mobiusdb
     ports:    # 가상화된 독립적인 환경을 갖는 소프트웨어 이기에 HOST와 Port 매칭이 필요합니다.  "HOST:Docker-container" 
       - "3306:3306"
     network_mode: "host"  # 네트워크모드를 Host로 동일하게 동작합니다. 
     volumes:              # Host에서 필요한 라이브러리들을 가져옵니다.  이 경로에 mobiusdb.sql 파일 저장되어있습니다. 
-      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      - ./Mobius/sql:/docker-entrypoint-initdb.d
     healthcheck:          # Docker-compose의 기능으로써 소프트웨어의 동작 여부를 체크해줍니다. 
             test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
             timeout: 20s
@@ -70,7 +71,7 @@
     environment:
       - NODE_ENV=production
     volumes:                   # Host의 모비우스 소스코드를 가상이미지 디렉토리로 가져옵니다.
-      - ./Mobius-master:/home/node/app
+      - ./Mobius:/home/node/app
     network_mode: "host"
     expose:
       - "8081"
