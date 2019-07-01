@@ -8,6 +8,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: dksdlfduq2
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: mobiusdb
     ports:
       - "3306:3306"
     network_mode: "host"
