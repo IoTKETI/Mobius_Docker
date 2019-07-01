@@ -45,6 +45,7 @@ services:  # 각 가상화 소프트웨어들을 서비스로 정의합니다.
 
 
  db:
+ 
     image: mysql:5.7    # Docker-Hub에 저장된 mysql Docker 이미지를 가져옵니다. 
     environment:        # mysql 환경변수 설정입니다. 
       MYSQL_ROOT_PASSWORD: root
@@ -58,7 +59,9 @@ services:  # 각 가상화 소프트웨어들을 서비스로 정의합니다.
             test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
             timeout: 20s
             retries: 10
+            
  node:			# Docker-Hub에 저장된 Nodejs 이미지를 가져옵니다. 
+ 
     image: "node:7.6"
     working_dir: /home/node/app   # Nodejs 소스코드를 형성할 가상이미지 디렉토리를 설정합니다. 
     environment:
@@ -73,6 +76,7 @@ services:  # 각 가상화 소프트웨어들을 서비스로 정의합니다.
             db:
                 condition: service_healthy
  mqtt:
+ 
     image: eclipse-mosquitto:latest  # Docker-Hub에 저장된 mosquitto 이미지를 가져옵니다. 
     ports:
       - 1883:1883
