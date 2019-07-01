@@ -1,48 +1,47 @@
-# Mobius_Docker 사용법
+# Mobius_Docker Installation
 
-1. 도커 설치
+1. Download docker
 
     sudo apt-get install docker.io
 
-2. 도커 컴포즈 설치
+2. Download docker-compose
 
     sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 
-3. 권한 변경 
+3. Change the permission to use docker-compose
     
     sudo chmod +x /usr/local/bin/docker-compose
 
-4. 모비우스 도커 컴포즈 yml 파일 다운로드 
+4. Download the docker-compose "yml" file of Mobius
 
     git clone https://github.com/IoTKETI/Mobius_Docker.git
     
     cd Mobius_Docker
 
-4. 모비우스 다운로드 
+4. Download the latest Mobius source code
 
     git clone https://github.com/IoTKETI/Mobius.git
     
     cd Mobius
 
-5. 모비우스 node 모듈 설치
+5. Download the essential libraries required to run Mobius
     
     npm install
     
     cd ..
 
-6. 도커 컴포즈 실행 
+6. Run docker-compose 
 
     sudo docker-compose up
     
-* 도커 컴포즈 강제 종료 시 (Ctrl + C - 2번)
-"sudo docker-compose down" 필수 
+* Docker-compose If forcibly terminated, enter the "sudo docker-compose down" command mandatory input
 
 
-# 정상동작_화면
+# Snapshot of normal running screen 
 ![정상동작 화면](./img/성공화면.PNG)
 
 
-# docker-compose 구성 내용 
+# Docker-compose configuration details
 
 
 
