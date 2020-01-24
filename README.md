@@ -18,19 +18,27 @@
     
     cd Mobius_Docker
 
-**4. Download the latest Mobius source code**
+**5. Download the latest Mobius source code**
 
     git clone https://github.com/IoTKETI/Mobius.git
     
     cd Mobius
 
-**5. Download the essential libraries required to run Mobius**
+**6. Copy mobiusdb.sql to docker-entrypoint-initdb.d directory**
+
+    mkdir sql
+    
+    cp ./mobius/mobiusdb.sql ./sql/mobiusdb.sql
+    
+**7. Download the essential libraries required to run Mobius**
+
+    sudo apt-get install npm
     
     npm install
     
     cd ..
 
-**6. Run docker-compose**
+**8. Run docker-compose**
 
     sudo docker-compose up
     
