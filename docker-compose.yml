@@ -15,7 +15,7 @@ services:
     volumes:
       - ./Mobius/sql:/docker-entrypoint-initdb.d
     healthcheck:
-            test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+            test: ["CMD", "mysqladmin" , "--password=dksdlfduq2", "ping", "-h", "localhost"]
             timeout: 20s
             retries: 10
  node:
