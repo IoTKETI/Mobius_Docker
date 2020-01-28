@@ -60,7 +60,7 @@
       - ./Mobius/sql:/docker-entrypoint-initdb.d
     healthcheck:          # It is a function of Docker-compose to check whether the software is working or not.
             test: ["CMD", "mysqladmin" , "--password=dksdlfduq2", "ping"]
-            interval:20s
+            interval: 20s
             timeout: 20s
             retries: 10
             
