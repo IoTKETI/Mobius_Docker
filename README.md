@@ -20,7 +20,7 @@
 
 **4. Download the latest Mobius source code**
 
-    git clone https://github.com/IoTKETI/Mobius.git
+    git clone -b 2.4.25 https://github.com/IoTKETI/Mobius.git
     
     cd Mobius
 
@@ -50,16 +50,17 @@
  
     image: mysql:5.7    # Import the mysql docker image stored in the Docker-Hub.
     environment:        # This is the mysql environment variable setting.
-      MYSQL_ROOT_PASSWORD: dksdlfduq2
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      MYSQL_DATABASE: mobiusdb
+      MYSQL_ROOT_PASSWORD: "dksdlfduq2"
+      MYSQL_DATABASE: "mobiusdb"
     ports:    # Port matching of HOST Port and Docker is required.  "HOST:Docker-container" 
       - "3306:3306"
     network_mode: "host"  # It operates in the same network environment as the host for easy use.
     volumes:              # Get the required libraries from the Host. The mobiusdb.sql file is prepared in this path.
       - ./Mobius/sql:/docker-entrypoint-initdb.d
     healthcheck:          # It is a function of Docker-compose to check whether the software is working or not.
-            test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+            test: ["CMD", "mysqladmin" , "--password=dksdlfduq2", "ping"]
+            interval: 20s
             timeout: 20s
             retries: 10
             
