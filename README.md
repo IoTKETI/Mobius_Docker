@@ -20,7 +20,7 @@
 
 **4. Download the latest Mobius source code**
 
-    git clone https://github.com/IoTKETI/Mobius.git
+    git clone -b 2.4.25 https://github.com/IoTKETI/Mobius.git
     
     cd Mobius
 
