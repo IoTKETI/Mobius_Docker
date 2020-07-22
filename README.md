@@ -32,7 +32,7 @@
 
 # Snapshot of normal running Mobius docker 
 
-In the snapshopt, left console shows response of "Retrieve <CES> Resource" and right console describes request of "Retreive <CSE> Resoruce" respectively.
+In the snapshopt, left console shows response of "Retrieve '<CES>' Resource" and right console describes request of "Retreive '<CSE>' Resoruce" respectively.
 
 ![정상동작 화면](./img/성공화면.png)
 
