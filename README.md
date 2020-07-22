@@ -31,7 +31,7 @@
 
 
 # Snapshot of normal running Mobius docker 
-![정상동작 화면](./img/성공화면.PNG)
+![정상동작 화면](./img/성공화면.png)
 
 
 # Docker-compose configuration details
