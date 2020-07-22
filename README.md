@@ -18,7 +18,7 @@
     ./test.sh
   
   
-You can follows below commands for each objective  
+**You can follows below commands for each objective**
 
 Remove mobius docker containers
 "./remove.sh"
