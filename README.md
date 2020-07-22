@@ -27,7 +27,7 @@
     "./status.sh"
 
     Show logs of mobius docker containers
-    "./test.sh"
+    "./logs.sh"
 
 
 # Snapshot of normal running Mobius docker 
