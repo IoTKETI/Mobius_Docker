@@ -20,14 +20,14 @@
   
 **You can follows below commands for each objective**
 
-Remove mobius docker containers
-"./remove.sh"
+    Remove mobius docker containers
+    "./remove.sh"
 
-Check status of mobius docker containers
-"./status.sh"
+    Check status of mobius docker containers
+    "./status.sh"
 
-Show logs of mobius docker containers
-"./test.sh"
+    Show logs of mobius docker containers
+    "./test.sh"
 
 
 # Snapshot of normal running Mobius docker 
