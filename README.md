@@ -5,16 +5,18 @@
     sudo git clone https://github.com/IoTKETI/Mobius_Docker.git
     cd Mobius_Docker
 
-**2. Execute "install.sh"
+**2. Execute "install.sh"**
 
     ./instatll.sh
     
-**3. Execute "run.sh"
+**3. Execute "run.sh"**
 
     ./run.sh
     
-**4. Test using cURL
+**4. Test using cURL**
+
     ./test.sh
+  
   
 You can follows below commands for each objective  
 
