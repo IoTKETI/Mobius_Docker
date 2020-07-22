@@ -1,40 +1,31 @@
 # Mobius_Docker Installation
 
-**1. Download docker**
+**1. Download Mobius_Docker from KETI's git repository**
 
-    sudo apt-get install docker.io
-
-**2. Download docker-compose**
-
-    sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
-
-**3. Change the permission to use docker-compose**
-    
-    sudo chmod +x /usr/local/bin/docker-compose
-
-**4. Download the docker-compose "yml" file of Mobius**
-
-    git clone https://github.com/IoTKETI/Mobius_Docker.git
-    
+    sudo git clone https://github.com/IoTKETI/Mobius_Docker.git
     cd Mobius_Docker
 
-**4. Download the latest Mobius source code**
+**2. Execute "install.sh"
 
-    git clone -b 2.4.25 https://github.com/IoTKETI/Mobius.git
+    ./instatll.sh
     
-    cd Mobius
+**3. Execute "run.sh"
 
-**5. Download the essential libraries required to run Mobius**
+    ./run.sh
     
-    npm install
-    
-    cd ..
+**4. Test using cURL
+    ./test.sh
+  
+You can follows below commands for each objective  
 
-**6. Run docker-compose**
+Remove mobius docker containers
+"./remove.sh"
 
-    sudo docker-compose up
-    
-* Docker-compose If forcibly terminated, enter the "sudo docker-compose down" command mandatory input
+Check status of mobius docker containers
+"./status.sh"
+
+Show logs of mobius docker containers
+"./test.sh"
 
 
 # Snapshot of normal running Mobius docker 
@@ -42,9 +33,6 @@
 
 
 # Docker-compose configuration details
-
-
-
 
  DB
  
