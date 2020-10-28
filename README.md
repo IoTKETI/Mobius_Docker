@@ -1,50 +1,43 @@
 # Mobius_Docker Installation
 
-**1. Download docker**
+**1. Download Mobius_Docker from KETI's git repository**
 
-    sudo apt-get install docker.io
-
-**2. Download docker-compose**
-
-    sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
-
-**3. Change the permission to use docker-compose**
-    
-    sudo chmod +x /usr/local/bin/docker-compose
-
-**4. Download the docker-compose "yml" file of Mobius**
-
-    git clone https://github.com/IoTKETI/Mobius_Docker.git
-    
+    sudo git clone https://github.com/IoTKETI/Mobius_Docker.git
     cd Mobius_Docker
 
-**4. Download the latest Mobius source code**
+**2. Execute "install.sh"**
 
-    git clone -b 2.4.25 https://github.com/IoTKETI/Mobius.git
+    ./instatll.sh
     
-    cd Mobius
+**3. Execute "run.sh"**
 
-**5. Download the essential libraries required to run Mobius**
+    ./run.sh
     
-    npm install
-    
-    cd ..
+**4. Test using cURL**
 
-**6. Run docker-compose**
+    ./test.sh
+  
+  
+**You can follows below commands for each objective**
 
-    sudo docker-compose up
-    
-* Docker-compose If forcibly terminated, enter the "sudo docker-compose down" command mandatory input
+    Remove mobius docker containers
+    "./remove.sh"
+
+    Check status of mobius docker containers
+    "./status.sh"
+
+    Show logs of mobius docker containers
+    "./logs.sh"
 
 
 # Snapshot of normal running Mobius docker 
-![정상동작 화면](./img/성공화면.PNG)
+
+In the snapshot, left console shows response of "Retrieve CES Resource" and right console describes request of "Retreive CSE Resoruce" respectively.
+
+![정상동작 화면](./img/성공화면.png)
 
 
 # Docker-compose configuration details
-
-
-
 
  DB
  
@@ -95,6 +88,6 @@
 
 ## Authors
 
-* **JongGwan An** - *Initial work* - [Cftn] (https://github.com/Cftn) (kman3212@gmail.co.kr, kman3212@keti.re.kr)
+* **JongGwan An** - *Initial work* - [Cftn] (https://github.com/Cftn) (kman3212@keti.re.kr, kman3212@gmail.co.kr)
 
 

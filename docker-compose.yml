@@ -13,7 +13,7 @@ services:
       - "3306:3306"
     network_mode: "host"
     volumes:
-      - ./Mobius/sql:/docker-entrypoint-initdb.d
+      - ./Mobius/mobius/mobiusdb.sql:/docker-entrypoint-initdb.d/mobiusdb.sql
     healthcheck:
             test: ["CMD", "mysqladmin" ,"--password=dksdlfduq2","ping"]
             interval: 20s
