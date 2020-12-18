@@ -37,7 +37,7 @@
 
 In the snapshot, left console shows response of "Retrieve CES Resource" and right console describes request of "Retreive CSE Resoruce" respectively.
 
-![정상동작 화면](./img/성공화면.png)
+![정상동작 화면](https://user-images.githubusercontent.com/29790334/102583698-803f1280-4148-11eb-8fe4-878bda1df7a2.png)
 
 
 # Docker-compose configuration details
