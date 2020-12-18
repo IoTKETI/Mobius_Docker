@@ -19,7 +19,10 @@
   
   
 **You can follows below commands for each objective**
-
+    
+    Stop mobius docker containers
+    "sudo ./stop.sh"
+    
     Remove mobius docker containers
     "sudo ./remove.sh"
 
