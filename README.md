@@ -7,27 +7,27 @@
 
 **2. Execute "install.sh"**
 
-    ./instatll.sh
+    sudo ./instatll.sh
     
 **3. Execute "run.sh"**
 
-    ./run.sh
+    sudo ./run.sh
     
 **4. Test using cURL**
 
-    ./test.sh
+    sudo ./test.sh
   
   
 **You can follows below commands for each objective**
 
     Remove mobius docker containers
-    "./remove.sh"
+    "sudo ./remove.sh"
 
     Check status of mobius docker containers
-    "./status.sh"
+    "sudo ./status.sh"
 
     Show logs of mobius docker containers
-    "./logs.sh"
+    "sudo ./logs.sh"
 
 
 # Snapshot of normal running Mobius docker 
