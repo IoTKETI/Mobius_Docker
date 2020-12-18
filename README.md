@@ -45,7 +45,7 @@ In the snapshot, left console shows response of "Retrieve CES Resource" and righ
 
  DB
  
-    image: mysql:5.7    # Import the mysql docker image stored in the Docker-Hub.
+    image: mysql:latest    # Import the mysql docker image stored in the Docker-Hub.
     environment:        # This is the mysql environment variable setting.
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_ROOT_PASSWORD: "dksdlfduq2"
@@ -63,7 +63,7 @@ In the snapshot, left console shows response of "Retrieve CES Resource" and righ
             
  Mobius			
  
-    image: "node:7.6"
+    image: "node:14.5.2"
     working_dir: /home/node/app   # Sets the virtual image directory of the Nodejs-based Mobius.
     environment:
       - NODE_ENV=production
