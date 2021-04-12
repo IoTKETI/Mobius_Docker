@@ -92,6 +92,6 @@ In the snapshot, left console shows response of "Retrieve CES Resource" and righ
 
 ## Authors
 
-* **JongGwan An** - *Initial work* - [Cftn] (https://github.com/Cftn) (jg.an@keti.re.kr, jg.an.1182@gmail.co.kr)
+* **JongGwan An** - *Initial work* - [Cftn] (https://github.com/Cftn) (jg.an@keti.re.kr, jg.an.1182@gmail.com)
 
 
