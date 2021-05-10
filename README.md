@@ -7,41 +7,45 @@
 
 **2. Execute "install.sh"**
 
-    ./instatll.sh
+    sudo ./instatll.sh
     
 **3. Execute "run.sh"**
 
-    ./run.sh
+    sudo ./run.sh
     
 **4. Test using cURL**
 
-    ./test.sh
+    sudo ./test.sh
   
   
 **You can follows below commands for each objective**
-
+    
+    Stop mobius docker containers 
+    "sudo ./stop.sh"
+    
     Remove mobius docker containers
-    "./remove.sh"
+    "sudo ./remove.sh"
 
     Check status of mobius docker containers
-    "./status.sh"
+    "sudo ./status.sh"
 
     Show logs of mobius docker containers
-    "./logs.sh"
+    "sudo ./logs.sh"
 
 
 # Snapshot of normal running Mobius docker 
 
 In the snapshot, left console shows response of "Retrieve CES Resource" and right console describes request of "Retreive CSE Resoruce" respectively.
 
-![정상동작 화면](./img/성공화면.png)
+![정상동작 화면](https://user-images.githubusercontent.com/29790334/102583698-803f1280-4148-11eb-8fe4-878bda1df7a2.png)
+![정상동작 화면](https://user-images.githubusercontent.com/29790334/102583766-9c42b400-4148-11eb-8d17-7aac7a91c216.png)
 
 
 # Docker-compose configuration details
 
  DB
  
-    image: mysql:5.7    # Import the mysql docker image stored in the Docker-Hub.
+    image: mysql:latest    # Import the mysql docker image stored in the Docker-Hub.
     environment:        # This is the mysql environment variable setting.
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_ROOT_PASSWORD: "dksdlfduq2"
@@ -59,7 +63,7 @@ In the snapshot, left console shows response of "Retrieve CES Resource" and righ
             
  Mobius			
  
-    image: "node:7.6"
+    image: "node:14.5.2"
     working_dir: /home/node/app   # Sets the virtual image directory of the Nodejs-based Mobius.
     environment:
       - NODE_ENV=production
@@ -88,6 +92,6 @@ In the snapshot, left console shows response of "Retrieve CES Resource" and righ
 
 ## Authors
 
-* **JongGwan An** - *Initial work* - [Cftn] (https://github.com/Cftn) (kman3212@keti.re.kr, kman3212@gmail.co.kr)
+* **JongGwan An** - *Initial work* - [Cftn] (https://github.com/Cftn) (jg.an@keti.re.kr, jg.an.1182@gmail.com)
 
 
