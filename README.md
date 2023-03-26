@@ -7,7 +7,7 @@
 
 **2. Execute "install.sh"**
 
-    sudo ./instatll.sh
+    sudo ./install.sh
     
 **3. Execute "run.sh"**
 
